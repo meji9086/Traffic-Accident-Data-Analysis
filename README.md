@@ -3,7 +3,7 @@
 교통사고의 원인을 분석하는 것이 목표이다.
 
 **데이터 활용**                     
-[도로교통공단 TAAS](http://taas.koroad.or.kr/sta/acs/exs/typical.do?menuId=WEB_KMP_OVT_UAS_ASA#)            
+[도로교통공단 TAAS](http://taas.koroad.or.kr/sta/acs/exs/typical.do?menuId=WEB_KMP_OVT_UAS_ASA#)
 [도로교통공단](https://www.data.go.kr/index.do)           
         
 ## 👩‍👩‍👧‍👦 팀 정보            
