@@ -3,8 +3,6 @@ import plotly.express as px
 import koreanize_matplotlib
 import streamlit as st
 
-from glob import glob
-
 st.set_page_config(
     page_title="연령별 교통사고 발생건수 분석",
     page_icon="🚕",
