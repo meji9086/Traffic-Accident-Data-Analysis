@@ -15,7 +15,7 @@
 |<span style="color:blue">[손진선](https://github.com/Son-jinseon)</span>|월/요일/시간대별 교통사고 분석|          
 |<span style="color:blue">[정세리](https://github.com/SERi-J)</span>|가해운전자 차종별 월별 교통사고 분석|            
 |<span style="color:blue">[이선오](https://github.com/seonseono)</span>|가해자 연령층별 교통사고 분석|             
-|<span style="color:blue">[김준모](https://github.com/junmojjang)</span>|도로형태별 시간별 교통사고 분석|             
+|<span style="color:blue">[김준모](https://github.com/junmojjang)</span>|도로종류,형태별 시간별 교통사고 분석|             
 
 
 ## 📜 Summary.             
