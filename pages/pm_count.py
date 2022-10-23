@@ -18,29 +18,26 @@ st.markdown("""**가설** : 법이 개정된 _5월 이후 '개인 이동형 수�
 
 st.sidebar.markdown("# 개인형이동수단 교통사고 🛴")
 
+car_kind = "https://raw.githubusercontent.com/meji9086/Traffic-Accident-Data-Analysis/master/data/car_kind.csv"
+car_region = "https://raw.githubusercontent.com/meji9086/Traffic-Accident-Data-Analysis/master/data/car_region.csv"
+
 @st.cache
-def load_month():
-       df = pd.read_excel("가해운전자_차종별_월별_교통사고_done.xlsx", index_col=0)
+def load_month(car_kind):
+       df = pd.read_csv(car_kind, index_col=0, encoding='utf-8')
        df = df.T
        df = df.reset_index()
        return df
 
-def load_region():
-       df_region = pd.read_excel("지방경찰청별_가해운전자_차종별_교통사고_done.xlsx")
+def load_region(car_region):
+       df_region = pd.read_csv(car_region, encoding='utf-8')
        df_region_rename = df_region.rename(columns=df_region.iloc[0])
        df_region = df_region_rename.drop(index=0)
        df_region = df_region.replace("-", 0)
        df_region = df_region.reset_index(drop=True)
 
        return df_region       
-df = load_month()
-df_region = load_region()
-
-
-# excel 파일 불러오기
-# df = pd.read_excel("가해운전자_차종별_월별_교통사고_done.xlsx", index_col=0)
-# df = df.T
-# df = df.reset_index()
+df = load_month(car_kind)
+df_region = load_region(car_region)
 
 # 컬럼이름변경
 df = df.rename(columns={"index":"월별"})
@@ -50,16 +47,21 @@ df.columns.name = None
 
 # 월별의 '01_사고건수' 를 언더바(_)를 기준으로 split
 # '월' 컬럼과 '사고유형' 컬럼을 생성하여 각각 의 값을 넣어줌
+df["월별"][0] = "차종_차종"
 df["월"] = [df["월별"].str.split("_")[x][0] for x in range(len(df["월별"]))]
 df["사고유형"] = [df["월별"].str.split("_")[x][1][:2] for x in range(len(df["월별"]))]
-
-# 기존의 월별 컬럼 제거
 df = df.drop(columns=["월별"])
 
-# 컬럼위치를 보기좋게 위치변경
-df = df.reindex(columns=['사고유형','월', '승용차', '승합차', '화물차', '특수차', '이륜차', '원동기장치자전거', '자전거',
-       '개인형이동수단', '건설기계', '농기계', '기타/불명'])
-df = df.sort_values(["사고유형"])
+
+df["월"][0] = "월"
+df["사고유형"][0] = "사고유형"
+
+col = df.columns.to_list()
+col1 = df.loc[0].to_list()
+df.columns = [col, col1]
+df.columns = df.columns.droplevel(0)
+df = df.drop(index=0)
+df = df.rename(columns={"개인형이동수단(PM)":"개인형이동수단"})
 
 # 각 유형별로 변수할당하여 묶어줌
 df_accident = df[df["사고유형"].isin(["사고"])].sort_values(["월"])
@@ -72,10 +74,16 @@ df_copy = df_copy[["개인형이동수단"]]
 df_copy_accident = df_copy.iloc[:12].sort_values(["월"]).T
 df_copy_injury = df_copy.iloc[12:24].sort_values(["월"])
 df_copy_death = df_copy.iloc[24:].sort_values(["월"])
+# seoul = seoul.astype("int")
 
 seoul = df_region.iloc[:31]
 gg_n = df_region.iloc[31:63]
 gg_e = df_region.iloc[64:]
+seoul["사고건수"] = seoul["사고건수"].astype("int")
+gg_n["사고건수"] = gg_n["사고건수"].astype("int")
+gg_e["사고건수"] = gg_e["사고건수"].astype("int")
+
+
 
 # plt.figure(figsize=(12, 5)) 
 fig, ax = plt.subplots(figsize=(10, 5))
@@ -83,7 +91,7 @@ plt.axhline(166, color='#4374D9', linewidth=0.5, linestyle='dotted')
 plt.axvline(4, color='#4374D9', linewidth=0.5, linestyle='dotted')
 sns.barplot(data=df_accident, x="월", y="개인형이동수단", color="#FFD8D8").set(title="\n월별 개인형이동수단 사고건수\n")
 st.pyplot(fig)
-df_copy_accident
+# df_copy_accident
 
 
 st.markdown("""
@@ -99,22 +107,24 @@ st.markdown("""
 
 df_count = pd.concat([df_death, df_injury])
 
-fig2, ax = plt.subplots(figsize=(10, 5))
+fig2, ax = plt.subplots(figsize=(10, 3))
 sns.pointplot(data=df_count, x="월", y="개인형이동수단", hue="사고유형",
              markers="X",scale=0.5).set(title="\n월별 개인형이동수단 사망자 및 부상자\n")
 plt.axvline(4, color='#4374D9', linewidth=0.5, linestyle='dotted')
 plt.axhline(186, color='#4374D9', linewidth=0.5, linestyle='dotted')
 plt.axhline(0, color='black', linewidth=0.5, linestyle='dotted')
 st.pyplot(fig2)
-df_copy_injury = df_copy_injury.rename(columns={"개인형이동수단":"부상자수"})
-df_copy_death = df_copy_death.rename(columns={"개인형이동수단":"사망자수"})
-df_copy_con = pd.concat([df_copy_death, df_copy_injury], axis=1).T
-df_copy_con
+
+# df_copy_injury = df_copy_injury.rename(columns={"개인형이동수단":"부상자수"})
+# df_copy_death = df_copy_death.rename(columns={"개인형이동수단":"사망자수"})
+# df_copy_con = pd.concat([df_copy_death, df_copy_injury], axis=1).T
+# df_copy_con
 st.markdown("""
 월별 개인형이동수단을 이용하면서 부상자 역시 법시행 후 한달정도는 부상자가 줄어드는듯 보이나, \n
 사고건수 그래프와 동일하게 부상자도 겨울이전에는 늘어나는것으로 보인다.
 사망자 역시 기존에 1~2명 발생하다가, 이용자 수가 늘어남과 같이 사망자수도 조금씩 늘어났다. \n
 \n""")
+
 
 fig3, ax = plt.subplots(figsize=(10, 4))
 # plt.figure(figsize=(12, 5))
@@ -162,6 +172,4 @@ st.markdown("""
 """)
 
 st.markdown("사용한 데이터 : 가해자 법규 위반 별 주야 별 교통사고 데이터 ( 출처 : [http://taas.koroad.or.kr/index.jsp](http://taas.koroad.or.kr/index.jsp) )")
-
-
 
