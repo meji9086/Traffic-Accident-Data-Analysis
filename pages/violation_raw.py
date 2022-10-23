@@ -33,14 +33,14 @@ st.markdown("""
 """)
 
 # 데이터 불러오기
-data_name = "법규위반 시각화 데이터.xlsx"
+url = "https://github.com/meji9086/Traffic-Accident-Data-Analysis/raw/master/data/violation_raw_data.txt"
 @st.cache
-def load_data(data):
-   df = pd.read_excel(data, index_col=0)
+def load_data(url):
+   df = pd.read_table(url, sep='\t')
    return df
 
 data_load_state = st.text('Loading data...')
-df = load_data(data_name)
+df = load_data(url)
 data_load_state.text("Success! (using st.cache)")
 
 # 사용할 데이터
