@@ -17,7 +17,7 @@ url = "https://raw.githubusercontent.com/meji9086/Traffic-Accident-Data-Analysis
 
 @st.cache
 def load_data():
-    df = pd.read_csv(url, encoding="cp949", index_col=0)
+    df = pd.read_csv(url, encoding="utf-8", index_col=0)
     return df
 
 
