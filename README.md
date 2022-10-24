@@ -12,7 +12,7 @@
 ## 👩‍👩‍👧‍👦 Team Info.            
 |이름|역할|             
 |:------:|:---:|                    
-|<span style="color:blue">[이영빈](https://github.com/Y0ungbinLEE)</span>|사고유형별 교통사고 데이터 전처리 및 시각화, PPT 제작|                            
+|<span style="color:blue">[이영빈👑](https://github.com/Y0ungbinLEE)</span>|사고유형별 교통사고 데이터 전처리 및 시각화, PPT 제작|                            
 |<span style="color:blue">[손진선](https://github.com/Son-jinseon)</span>|월/요일/시간별 교통사고 데이터 전처리 및 시각화, PPT 제작|          
 |<span style="color:blue">[정세리](https://github.com/SERi-J)</span>|차종별 교통사고 데이터 전처리 및 시각화, PPT 제작|            
 |<span style="color:blue">[이선오](https://github.com/seonseono)</span>|가해자 연령별 교통사고 데이터 전처리 및 시각화, 노션 정리, 발표|             
