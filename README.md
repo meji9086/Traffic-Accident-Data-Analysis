@@ -46,13 +46,13 @@ Traffic Accident
 
 월/요일/시간대별 교통사고 발생 건수 데이터를 시각화하여 확인한 결과 월로는 *10월*, 요일로는 *금요일*, 시간으로는 *오후 6시-8시*에 가장 많은 사고가 발생했습니다.        
 
-<img src="https://user-images.githubusercontent.com/72390138/197427629-5345488e-b14b-40b3-83cc-d23b0119726c.png"  width="500" height="500"/>       
-<img src="https://user-images.githubusercontent.com/72390138/197427690-64055b43-e203-49e0-87ea-902255cea995.png"  width="500" height="500"/>           
+<img src="https://user-images.githubusercontent.com/72390138/197427629-5345488e-b14b-40b3-83cc-d23b0119726c.png"  width="650" height="500"/>       
+<img src="https://user-images.githubusercontent.com/72390138/197427690-64055b43-e203-49e0-87ea-902255cea995.png"  width="650" height="500"/>           
 
 월/시간대, 요일/시간대에 따른 교통사고 발생 건수를 히트맵으로 시각화한 결과, 색의 농도를 통해 퇴근 시간대 차량 사고 발생률이 높다는 것을 다시 한 번 확인할 수 있었습니다.      
 활동량 및 이동량과 사고 발생량이 비례하는 것입니다.         
 
-<img src="https://user-images.githubusercontent.com/72390138/197427776-05f5a255-29db-4565-9b7d-8de44f549544.png"  width="800" height="500"/>           
+<img src="https://user-images.githubusercontent.com/72390138/197427776-05f5a255-29db-4565-9b7d-8de44f549544.png"  width="650" height="500"/>           
 
 교통 사고가 많이 일어나는 시기에는 개인형 이동 수단의 교통사고 발생률도 높았습니다.                  
 공유 킥보드 회사 ‘씽씽’의 자사 데이터 분석에 따르면 계절별 이용량은 여름 36.0%, 가을 29.1%, 봄 22.9%, 겨울 12.0% 순으로 개인형 이동 수단 역시 **이용량과 사고 발생량이 비례함**을 알 수 있습니다.            
