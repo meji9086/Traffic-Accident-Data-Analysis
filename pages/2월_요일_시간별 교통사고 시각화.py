@@ -65,8 +65,6 @@ st.markdown("")
 
 
 
-df = load_data()
-
 
 # <월별>
 st.subheader("✔ 월별")
