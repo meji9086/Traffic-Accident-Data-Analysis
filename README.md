@@ -63,7 +63,7 @@ Traffic Accident
  
 관련 법 제정만으로는 사고 감소에 큰 효과가 없는 것입니다. 이 같은 현상은 보행 중 교통사고 분석에서도 찾아볼 수 있었습니다.         
 
-<img src="https://user-images.githubusercontent.com/72390138/197430166-0e145297-4efb-496d-b553-842fd7cac461.png"  width="650" height="500"/>       
+<img src="https://user-images.githubusercontent.com/72390138/197430166-0e145297-4efb-496d-b553-842fd7cac461.png"  width="550" height="500"/>       
 
 사고 유형 별 교통사고 발생 건수 분석에서 차와 사람 사이에서 발생한 교통사고는 횡단 보도가 아닌 길 **가장자리 구역 통행 중**에 가장 많이 일어남을 확인했습니다. 
 
@@ -80,7 +80,7 @@ Traffic Accident
 도로 형태 별 교통사고 발생 건수 분석 또한 교차로 내에서 가장 많은 사고가 발생하며, 후 순위까지 교차로가 차지하는 것으로 나타났습니다.      
 조사 대상인 다른 형태의 도로보다 교차로의 수가 많다는 점을 고려해도 큰 차이입니다.     
 
-<img src="https://user-images.githubusercontent.com/72390138/197430285-86cbbb3f-58c1-4e01-8b1d-274e69e3aa76.png"  width="800" height="500"/>     
+<img src="https://user-images.githubusercontent.com/72390138/197430285-86cbbb3f-58c1-4e01-8b1d-274e69e3aa76.png"  width="900" height="500"/>     
 
 **법규 위반별 사고 건수 분석에서 교차로 운행 방법 위반은 신호 위반, 안전 거리 미확보에 이어 3위**를 차지했습니다. 교차로에서는 주로 어떤 사고가 발생하는지 추가적으로 조사하던 중 교차로 사고에서 **노인 보행자의 피해가 많다**는 사실을 발견했습니다.             
 
