@@ -30,12 +30,12 @@
 ### Scripts   
 ```
 Traffic Accident               
-├── acc_type.py                    
-├── driver_age.py     
-├── pm_count.py     
-├── time_zones.py     
-├── traffic_kind.py     
-├── violatoin_raw.py     
+├── acc_type.py  # 사고유형별 분석                  
+├── driver_age.py  # 연령별 분석   
+├── pm_count.py  # 차종별 분석   
+├── time_zones.py  # 월/요일/시간별 분석   
+├── traffic_kind.py  # 도로형태별 분석   
+├── violatoin_raw.py  # 법규위반별 분석   
 └──                            
 ```
 
@@ -118,4 +118,4 @@ Traffic Accident
     1. 운전면허 갱신 주기 단축 및 교통 안전 교육을 시행한다.       
     2. 특정 연령 이상 운전자의 신체검사를 강화한다.        
     
-**저희는 이와 같이 교통사고 원인에 대해 분석하고 개선 방안을 제시하면서 방향을 제시하였습니다.**       
+**저희는 이와 같이 교통사고 원인에 대해 분석하고 개선 방안을 제시하면서 방향을 제시하고자 합니다.**       
