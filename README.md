@@ -1,5 +1,7 @@
 # 🚗 Traffic-Accident-Data-Analysis 🚗
 
+**🦁Likelion AI SCHOOL7** 
+**🔥 6조 핫식스 팀** 
 교통사고의 원인을 분석하는 것이 목표이다.            
 
 ## 🗃 Data Info.                                       
