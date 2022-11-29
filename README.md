@@ -11,14 +11,14 @@
 
 
 ## 👩‍👩‍👧‍👦 Team Info.            
-|이름|역할|             
-|:------:|:---:|                    
-|<span style="color:blue">[이영빈👑](https://github.com/Y0ungbinLEE)</span>|사고유형별 교통사고 데이터 전처리 및 시각화, PPT 제작|                            
-|<span style="color:blue">[손진선](https://github.com/Son-jinseon)</span>|월/요일/시간별 교통사고 데이터 전처리 및 시각화, PPT 제작|          
-|<span style="color:blue">[정세리](https://github.com/SERi-J)</span>|차종별 교통사고 데이터 전처리 및 시각화, PPT 제작|            
-|<span style="color:blue">[이선오](https://github.com/seonseono)</span>|가해자 연령별 교통사고 데이터 전처리 및 시각화, 노션 정리, 발표|             
-|<span style="color:blue">[김예지](https://github.com/meji9086)</span>|법규위반별 교통사고 데이터 전처리 및 시각화, streamlit 메인 페이지 작성|           
-|<span style="color:blue">[김준모](https://github.com/junmojjang)</span>|도로형태별 교통사고 데이터 전처리 및 시각화, streamlit 메인 페이지 작성|               
+|이름|역할|깃허브|             
+|:------:|:---:|:---:|                    
+|<span style="color:blue">[이영빈👑](https://github.com/Y0ungbinLEE)</span>|사고유형별 교통사고 데이터 전처리 및 시각화, PPT 제작|<a href="https://github.com/Y0ungbinLEE"><img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=White"/>|                
+|<span style="color:blue">[손진선](https://github.com/Son-jinseon)</span>|월/요일/시간별 교통사고 데이터 전처리 및 시각화, PPT 제작|<a href="https://github.com/Son-jinseon"><img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=White"/>|                   
+|<span style="color:blue">[정세리](https://github.com/SERi-J)</span>|차종별 교통사고 데이터 전처리 및 시각화, PPT 제작|<a href="https://github.com/SERi-J"><img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=White"/>|                     
+|<span style="color:blue">[이선오](https://github.com/seonseono)</span>|가해자 연령별 교통사고 데이터 전처리 및 시각화, 노션 정리, 발표|<a href="https://github.com/seonseono"><img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=White"/>|                     
+|<span style="color:blue">[김예지](https://github.com/meji9086)</span>|법규위반별 교통사고 데이터 전처리 및 시각화, streamlit 메인 페이지 작성|<a href="https://github.com/meji9086"><img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=White"/>|                    
+|<span style="color:blue">[김준모](https://github.com/junmojjang)</span>|도로형태별 교통사고 데이터 전처리 및 시각화, streamlit 메인 페이지 작성|<a href="https://github.com/junmojjang"><img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=White"/>|                        
 
 
 ## 📜 Summary.             
